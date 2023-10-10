@@ -1,1 +1,4 @@
+<%= content_for :header_tags do %>
+  <%= javascript_include_tag 'bundle', plugin: "redmine_chartkick_sample" %>
+<% end %>
 <%= pie_chart @issues.group(:tracker_id).count %>
